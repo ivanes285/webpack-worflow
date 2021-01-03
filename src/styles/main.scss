@@ -1,11 +1,18 @@
 @import "_variables.scss";
 
 $color-text:#252326;
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body{
-    background: #56ab2f ;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #a8e063, $bg-green);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #a8e063,$bg-green); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: #A770EF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container{
@@ -18,7 +25,6 @@ flex-direction: column;
 
 .life{
 text-align: center;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-style: Roboto;
 color: $color-text;
 }
@@ -26,8 +32,8 @@ color: $color-text;
 img {
     width: 500px;
     height: 350px;
-    filter: drop-shadow(0 0 5px blue);
-    padding-bottom: 50px;
+    filter: drop-shadow(0 0 8px #00E025);
+    padding:50px;
     border: none;
   }
 
@@ -43,9 +49,60 @@ img {
     background-color: transparent;
     border-radius: 12px ;
     border: 2px solid $color-text;
+    margin-bottom: 25px;
+    overflow: hidden;
+    letter-spacing: 0.01em;
+    
 }
 .btn:hover{
     color:$color-text;
-    background-color: $bg-color;
+    background-color: $bg-button;
     text-decoration: none;
+}
+
+nav{
+    background: #252326;
+    margin: auto;
+    padding:20px;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 85px;
+}
+
+li a {
+    background: linear-gradient(92.05deg, #b395f3 12.09%, #e770b2 42.58%, #fa6565 84.96%);
+    -webkit-box-decoration-break: clone;
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-size: 22px;
+    text-align: center;
+    font-style: bold;
+}
+  
+
+
+a:hover{
+cursor: pointer;
+border-bottom: 1px solid #fff;
+}
+
+.footer{
+ background: #252326;
+ text-align: center;
+ padding: 25px;
+}
+
+.footer p, h2{
+    font-size: 20px;
+    background: linear-gradient(92.05deg, #b29ae7 18.09%, #e282b7 38.58%, #e94343 82.96%);
+    -webkit-box-decoration-break: clone;
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    
 }

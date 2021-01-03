@@ -52,7 +52,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.handlebars",
-      minify: false //
+      minify: false 
       //  //propiedad para comprimir el codigo de html 
       //  //Nota: NO colocarlo cuando utilizamos handlebars ya que nos da un error ya que por defecto 
       //  //viene en modo production
