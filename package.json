@@ -7,7 +7,7 @@
     "server": "webpack serve",
     "dev": "webpack --mode development",
     "production": "webpack --mode production",
-    "reset":" rimraf dist && webpack --mode development && webpack serve"
+    "reset":" rimraf dist && webpack --mode production && webpack serve"
   },
   "author": "Ivan Lescano",
   "license": "ISC",
